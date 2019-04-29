@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.vmac.WatBot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_face"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        -->
+
+        <activity android:name=".com.example.abc.reimbursement.MainActivity">
+            <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="ocr"
+                tools:replace="android:value" />
+        </activity>
+        <activity
+            android:name=".com.example.abc.reimbursement.MealActivity"
+            android:label="Meal" />
+        <activity
+            android:name=".com.example.abc.reimbursement.ImageToTextConverter"
+            android:label="Scan Here" />
+        <activity
+            android:name=".com.example.abc.reimbursement.MiscellaneousActivity"
+            android:label="Miscellaneous" />
+        <activity
+            android:name=".com.example.abc.reimbursement.TeamExpenseActivity"
+            android:label="Team Expense" />
+        <activity
+            android:name="com.example.abc.reimbursement.ChoiceActivity"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".com.example.abc.reimbursement.ExpenseReport"
+            android:label="Expense Report">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                tools:replace="android:value" />
+        </activity>
+        <activity
+            android:name=".com.example.abc.reimbursement.Data.EditorExpense"
+            android:label="Edit"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <provider
+            android:name=".com.example.abc.reimbursement.Data.BillProvider"
+            android:authorities="com.example.vmac.WatBot.com.example.abc.reimbursement"
+            android:exported="false" />
+
+        <activity android:name=".com.example.abc.reimbursement.LocalTravel" />
+        <activity android:name=".com.example.abc.reimbursement.DistantTravel" />
+        <activity
+            android:name=".com.example.abc.reimbursement.DisplayActivity"
+            android:label="Display" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".com.example.abc.reimbursement.AdminApproval"></activity>
+    </application>
+
+</manifest>

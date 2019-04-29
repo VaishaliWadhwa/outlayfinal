@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"  
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    
+<ScrollView 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DistantTravelMealFragment"
+    tools:layout_editor_absoluteX="253dp"
+    tools:layout_editor_absoluteY="41dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/bill_date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Select Your Meal Date"
+            android:textSize="20dp"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter Your Restaurant Name"
+            android:textSize="20dp"
+            android:id="@+id/restaurant_name"
+            android:configChanges="orientation|keyboardHidden"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Enter Your Client Names"
+            android:textSize="20dp"
+            android:id="@+id/client_name"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Purpose"
+            android:textSize="20dp"
+            android:id="@+id/purpose"
+            android:configChanges="orientation|keyboardHidden"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Click Here To Scan"
+            android:id="@+id/button_scan"
+            android:background="#2AB0D9"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/scan"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Final Amount In The Bill"
+            android:textSize="20dp"
+            android:id="@+id/final_amount"
+            android:configChanges="orientation|keyboardHidden"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Final Submit"
+            android:id="@+id/final_submit"
+            android:background="#2AB0D9"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

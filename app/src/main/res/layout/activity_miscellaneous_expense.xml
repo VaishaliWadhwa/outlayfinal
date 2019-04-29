@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MiscellaneousActivity"
+    tools:layout_editor_absoluteX="253dp"
+    tools:layout_editor_absoluteY="41dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Date"
+            android:textSize="20dp"
+            android:layout_marginBottom="8dp"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Purpose And Details"
+            android:textSize="20dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/purpose"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Click Here To Scan"
+
+            android:layout_marginBottom="16dp"
+            android:id="@+id/button_scan"
+            android:layout_gravity="center"
+            android:background="#2AB0D9"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/scan"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Final Amount In The Bill"
+            android:textSize="20dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/final_amount"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Final Submit"
+            android:id="@+id/final_submit"
+            android:background="#2AB0D9"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</ScrollView>

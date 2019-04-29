@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_height="wrap_content"
+    tools:context=".com.example.abc.reimbursement.DistantTravel">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Purpose"
+                    android:configChanges="orientation|keyboardHidden"/>
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="From"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="To"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Meal"
+                    android:layout_weight="1"
+                    android:background="#2AB0D9"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Travel"
+                    android:layout_weight="1"
+                    android:background="#2AB0D9"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Stay"
+                    android:layout_weight="1"
+                    android:background="#2AB0D9"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragment2"
+                class="com.example.abc.reimbursement.DistantTravelMealFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </fragment>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "971071454714",
+    "firebase_url": "https://departmentbuddyauth.firebaseio.com",
+    "project_id": "departmentbuddyauth",
+    "storage_bucket": "departmentbuddyauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971071454714:android:fe619b4d1c3cb47f",
+        "android_client_info": {
+          "package_name": "com.example.vmac.chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971071454714-ivtq89rvm7qe9tvp8ljt5ef42qe25d2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vmac.chatbot",
+            "certificate_hash": "3054ad73abb9f37f8e139643a9561bf732be4038"
+          }
+        },
+        {
+          "client_id": "971071454714-to19064o2m4ba9p4s375msqh13sbit4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz4bkyFfKPtCNRuSC8OgZrtLWcqP3gS6E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971071454714-to19064o2m4ba9p4s375msqh13sbit4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
