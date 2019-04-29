@@ -173,6 +173,7 @@ public class DisplayActivity extends AppCompatActivity implements LoaderManager.
                 public void onClick(View v) {
                     saveBill();
                     Intent intent = new Intent(DisplayActivity.this, AdminApproval.class);
+                    intent.putExtra("user", userWho);
                     startActivity(intent);
                 }
             });
@@ -183,6 +184,7 @@ public class DisplayActivity extends AppCompatActivity implements LoaderManager.
                 public void onClick(View v) {
                     adminApprove();
                     Intent intent = new Intent(DisplayActivity.this, AdminApproval.class);
+                    intent.putExtra("user", userWho);
                     startActivity(intent);
                 }
             });
